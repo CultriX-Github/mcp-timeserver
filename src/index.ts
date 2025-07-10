@@ -1,6 +1,6 @@
-import { McpAgent, McpServer } from "@modelcontextprotocol/sdk/server";
+import { McpAgent } from "agents/mcp";
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
-
 /**
  * TimeMCP is an agent that provides tools for fetching the current time and date.
  */
