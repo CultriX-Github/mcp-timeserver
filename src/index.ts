@@ -1,10 +1,12 @@
 import { McpAgent } from "agents/mcp";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
+
+
 /**
- * TimeMCP is an agent that provides tools for fetching the current time and date.
+ * MyMCP is an agent that provides tools for fetching the current time and date.
  */
-export class TimeMCP extends McpAgent {
+export class MyMCP extends McpAgent {
   // Initialize the MCP Server with a name and version
   server = new McpServer({
     name: "Time MCP Server",
@@ -103,5 +105,6 @@ export class TimeMCP extends McpAgent {
 // Default export for Cloudflare Workers
 export default {
   // Mount the MCP Agent to handle requests at the specified path
-  fetch: TimeMCP.mount("/mcp"),
+  fetch: MyMCP.mount("/mcp"),
 };
+
