@@ -1,4 +1,4 @@
-import { McpAgent, McpServer } from "@modelcontextprotocol/sdk";
+import { McpAgent, McpServer } from "@modelcontextprotocol/sdk/server";
 import { z } from "zod";
 
 /**
@@ -8,7 +8,7 @@ export class TimeMCP extends McpAgent {
   // Initialize the MCP Server with a name and version
   server = new McpServer({
     name: "Time MCP Server",
-    version: "1.2.0", // Incremented version for the new feature
+    version: "1.2.0",
   });
 
   constructor() {
