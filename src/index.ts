@@ -1,4 +1,4 @@
-import { McpAgent, McpServer, StreamingResponse } from "@modelcontext/server";
+import { McpAgent, McpServer } from "@modelcontextprotocol/sdk";
 import { z } from "zod";
 
 /**
